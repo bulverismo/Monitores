@@ -18,7 +18,7 @@ $row = mysqli_num_rows($result);
 
 if($row == 1) {
 	$_SESSION['usuario'] = $usuario;
-	header('Location: painel.php'); //caminho para inserir as páginas das imagens
+	header('Location: envio.html'); //caminho para inserir as páginas das imagens
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
